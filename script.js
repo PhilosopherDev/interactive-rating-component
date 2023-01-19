@@ -1,5 +1,9 @@
 const selected = [];
 
+window.addEventListener('load', () => {
+    sessionStorage.setItem("selectedNumber", 0);
+});
+
 document.querySelector('.step').addEventListener('click', selectNumber);
 
 function selectNumber(evt) {
@@ -16,4 +20,12 @@ function selectNumber(evt) {
             target.setAttribute('class', 'btn__number btn__number-active');
         }
     }
+}
+
+document.querySelector('.btn__submit').addEventListener('click', clickSubmit);
+
+function clickSubmit(evt) {
+    sessionStorage.setItem("selectedNumber", selected.length);
+
+    location.pathname = `/thankyou.html`;
 }
