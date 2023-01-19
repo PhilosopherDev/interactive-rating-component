@@ -27,5 +27,5 @@ document.querySelector('.btn__submit').addEventListener('click', clickSubmit);
 function clickSubmit(evt) {
     sessionStorage.setItem("selectedNumber", selected.length);
 
-    location.pathname = `/thankyou.html`;
+    location.href = `${location.origin}/thankyou.html`;
 }
