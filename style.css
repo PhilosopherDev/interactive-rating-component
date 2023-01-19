@@ -265,3 +265,37 @@ body {
 .btn__submit-step {
     margin-top: 2rem;
 }
+
+/* thank you */
+
+.card__thankyou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__thankyou img {
+    margin-top: 13px;
+    width: 162px;
+    height: 108px;
+}
+
+.selected {
+    padding: 6px 20px 4px;
+    background-color: var(--color-dark-blue);
+    border-radius: 20px;
+    vertical-align: center;
+    margin: 2rem 0;
+}
+
+.selected__content {
+    color: var(--color-orange);
+    font-weight: 400;
+}
+
+.card__thankyou .content {
+    margin: 1rem 0 13px;
+    text-align: center;
+    width: 340px;
+}

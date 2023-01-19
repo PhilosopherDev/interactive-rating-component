@@ -20,15 +20,22 @@
 <body>
     <div class="container">
         <div class="card">
-            <div class="img__main"></div>
-            <div class="card__selected">You selected <!-- Add rating here --> out of 5</div>
-            <div class="title">Thank you!</div>
-            <div class="content">
-                We appreciate you taking the time to give a rating. If you ever need more support,
-                don’t hesitate to get in touch!
+            <div class="card__thankyou">
+                <img src="./images/illustration-thank-you.svg" alt="thankyou">
+                <div class="selected">
+                    <div class="selected__content">
+                        You selected <span class="selected__count"></span> out of 5
+                    </div>
+                </div>
+                <div class="title">Thank you!</div>
+                <div class="content">
+                    We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!
+                </div>
             </div>
         </div>
     </div>
+    <script src="./thankyou.js"></script>
 </body>
 
 </html>
