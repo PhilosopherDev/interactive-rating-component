@@ -27,5 +27,5 @@ document.querySelector('.btn__submit').addEventListener('click', clickSubmit);
 function clickSubmit(evt) {
     sessionStorage.setItem("selectedNumber", selected.length);
 
-    location.href = `${location.origin}/thankyou.html`;
+    location.href = `${location.origin}/interactive-rating-component/thankyou.html`;
 }
